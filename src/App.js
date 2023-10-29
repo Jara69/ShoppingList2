@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ShoppingList from './ShoppingList'; // Importujte komponentu ShoppingList
+
+const shoppingListData = [
+  { id: 1, item: 'Mléko', purchased: false },
+  { id: 2, item: 'Chléb', purchased: true },
+  { id: 3, item: 'Vajíčka', purchased: false },
+  // Další položky seznamu
+];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Nákupní Seznamy.</h1>
+      <ShoppingList data={shoppingListData}/>
     </div>
   );
 }

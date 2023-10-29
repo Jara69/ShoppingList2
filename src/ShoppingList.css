@@ -1,0 +1,87 @@
+.shopping-list {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shopping-list h2 {
+    font-size: 28px;
+    margin: 0 0 15px;
+    font-family: 'Arial', sans-serif;
+    color: #007bff;
+  }
+  
+  .shopping-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .shopping-list li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .shopping-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .shopping-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .shopping-list button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .shopping-list button:hover {
+    background: #0056b3;
+  }
+  
+  .shopping-list input[type="text"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px; /* Velikost písma */
+    font-family: 'Arial', sans-serif; /* Písmo */
+    text-align: center; /* Zarovnání textu na střed */
+  }
+  
+  .button-in-header {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-in-header:hover {
+    background-color: #0056b3;
+  }
+  
