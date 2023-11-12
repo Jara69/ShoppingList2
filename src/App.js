@@ -31,7 +31,18 @@ const App = () => {
   return (
     <div>
       <h1>Nákupní Seznamy</h1>
-      <button onClick={() => setShowArchived(!showArchived)}>
+      <button
+        style={{
+          backgroundColor: '#007bff',
+          color: '#fff',
+          border: 'none',
+          padding: '5px 10px',
+          marginLeft: '10px',
+          cursor: 'pointer',
+          transition: 'background-color 0.3s',
+        }}
+        onClick={() => setShowArchived(!showArchived)}
+      >
         {showArchived ? 'Zobrazit Nearchivované ' : 'Zobrazit archivované'}
       </button>
       {filteredLists.map((list, index) => (
@@ -42,14 +53,27 @@ const App = () => {
           onArchive={() => handleArchiveList(index)}
         />
       ))}
-      <div>
+      <div style={{ marginTop: '20px' }}>
         <input
           type="text"
           placeholder="Název nového seznamu"
           value={newListName}
           onChange={(e) => setNewListName(e.target.value)}
         />
-        <button onClick={handleCreateList}>Vytvořit seznam</button>
+        <button
+          style={{
+            backgroundColor: '#28a745',
+            color: '#fff',
+            border: 'none',
+            padding: '5px 10px',
+            marginLeft: '10px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+          }}
+          onClick={handleCreateList}
+        >
+          Vytvořit seznam
+        </button>
       </div>
     </div>
   );
